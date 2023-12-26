@@ -39,9 +39,18 @@ var qrcode = new QRious({
 <body onload= "JavaScript:refreshPage(1000);" style="  background: white;
 text-align: center;">
     
-    <img src="The-Reid.png.jpg" style="width: 50%;max-width: 500px;" >
+    <img src="Assets/The-Reid.png.webp" style="width: 50%;max-width: 500px;" >
     <br>
-    <canvas id="qrcode" style="height: 300px; width: 300px;text-align: center;"></canvas>
+    <br>
+    <br>
+    <br>
+    <div>
+        <canvas id="qrcode" style="height: 300px; width: 300px;text-align: center;"></canvas>
+        <h4>Building 14,Unit 46,Floor 2</h4>
+
+        <img src="Assets/map.jpg" style="width: 50%;max-width: 500px;" >
+    </div>
+    
     <canvas id="qrcode-2"></canvas>
     <script type="text/javascript">
             new QRious({element: document.getElementById("qrcode"), value: "https://europe-west1-balwin-60c4a.cloudfunctions.net/qrcodeapi/guard?userId=Cy7AK9WdQigG6jDYEXdNGcEUeUz1&dtime="+new Date().getTime()+"&lat=&lon="});
